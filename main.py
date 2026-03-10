@@ -11,6 +11,7 @@ Series: A pandas 1-dimensional labeled array that can store any data type.
 data = [100, 101, 102, 103]
 series_A = pandas.Series(data)
 print(series_A)
+
 """
 In the above lines of code, a list of integers is converted to a Series using pandas.
 Upon printing the series, we see the following result:
@@ -35,3 +36,7 @@ dtype: bool
 
 NOTE: Series() is not a method. It is a constructor
 """
+
+series_B = pandas.Series(data, index=["a", "b", "c", "d"])
+print(series_B)
+
