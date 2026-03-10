@@ -68,3 +68,7 @@ template being used.
 
 series_B.loc["b"] = 23
 print(series_B)
+
+"""
+Just like in a list, we can also edit values in the series by modifying the values at the specified location.
+"""
