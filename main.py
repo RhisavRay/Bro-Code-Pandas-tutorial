@@ -48,3 +48,7 @@ another series.
 For the second example we have used a list as the new template
 """
 
+value_1 = series_A.loc[2]
+print(value_1)
+value_2 = series_B.loc["b"]
+print(value_2)
