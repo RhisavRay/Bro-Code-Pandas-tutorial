@@ -40,3 +40,11 @@ NOTE: Series() is not a method. It is a constructor
 series_B = pandas.Series(data, index=["a", "b", "c", "d"])
 print(series_B)
 
+"""
+Like I said for the previous example, in column 1 we could see the index of each value with a label. The default behaviour of this label
+is to start from 0 and increment by 1 for each element in the series.
+Now if you want this to look different, you can add a custom label. A custom label can be a list, tuple, dictionary, NumPy array or
+another series.
+For the second example we have used a list as the new template
+"""
+
