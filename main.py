@@ -5,4 +5,8 @@ import pandas
 
 # Series: A pandas 1-dimensional labeled array that can store any data type.
 #         You can think of it as a single column in a spreadsheet
+"""
+Series: A pandas 1-dimensional labeled array that can store any data type.
+        You can think of it as a single column in a spreadsheet.
+"""
 
