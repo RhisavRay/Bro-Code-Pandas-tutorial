@@ -52,3 +52,8 @@ value_1 = series_A.loc[2]
 print(value_1)
 value_2 = series_B.loc["b"]
 print(value_2)
+
+"""
+To access these values, we have to use the ".loc" keyword and then within the [] add the label against the data we want. This value will
+be in accordance to the label used for that particular series
+"""
