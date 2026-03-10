@@ -65,3 +65,6 @@ print(value_3)
 Now we can also locate a value using the integer position. Or you can look at it like locating the value using the index, overlooking any
 template being used.
 """
+
+series_B.loc["b"] = 23
+print(series_B)
