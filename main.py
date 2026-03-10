@@ -60,3 +60,8 @@ be in accordance to the label used for that particular series
 
 value_3 = series_B.iloc[0]
 print(value_3)
+
+"""
+Now we can also locate a value using the integer position. Or you can look at it like locating the value using the index, overlooking any
+template being used.
+"""
