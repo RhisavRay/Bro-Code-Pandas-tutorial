@@ -8,9 +8,9 @@ Series: A pandas 1-dimensional labeled array that can store any data type.
         You can think of it as a single column in a spreadsheet.
 """
 
-data = [100, 101, 102, 103]
+data = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
 series_A = pandas.Series(data)
-print(series_A)
+# print(series_A)
 
 """
 In the above lines of code, a list of integers is converted to a Series using pandas.
@@ -37,8 +37,8 @@ dtype: bool
 NOTE: Series() is not a method. It is a constructor
 """
 
-series_B = pandas.Series(data, index=["a", "b", "c", "d"])
-print(series_B)
+series_B = pandas.Series(data, index=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"])
+# print(series_B)
 
 """
 Like I said for the previous example, in column 1 we could see the index of each value with a label. The default behaviour of this label
@@ -49,26 +49,27 @@ For the second example we have used a list as the new template
 """
 
 value_1 = series_A.loc[2]
-print(value_1)
+# print(value_1)
 value_2 = series_B.loc["b"]
-print(value_2)
+# print(value_2)
 
 """
-To access these values, we have to use the ".loc" keyword and then within the [] add the label against the data we want. This value will
-be in accordance to the label used for that particular series
+To access these values, we have to use the ".loc" keyword, meaning location, and then within the [] add the label against the data we want.
+This value will be in accordance to the label used for that particular series
 """
 
 value_3 = series_B.iloc[0]
-print(value_3)
+# print(value_3)
 
 """
 Now we can also locate a value using the integer position. Or you can look at it like locating the value using the index, overlooking any
-template being used.
+template being used. For this we use iloc, meaning integer location
 """
 
 series_B.loc["b"] = 23
-print(series_B)
+# print(series_B)
 
 """
 Just like in a list, we can also edit values in the series by modifying the values at the specified location.
 """
+
