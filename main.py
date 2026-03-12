@@ -78,3 +78,31 @@ Just like in a list, we can also edit values in the series by modifying the valu
 """
 We can use the above technique to filter the series by values
 """
+
+data_B = {
+    "Day 1": 1750,
+    "Day 2": 1590,
+    "Day 3": 2010,
+    "Day 4": 1320,
+    "Day 5": 1260,
+    "Day 6": 1440,
+    "Day 7": 1700,
+}
+series_C = pandas.Series(data_B)
+print(series_C)
+
+print(series_C.loc["Day 1"])
+print(series_C.loc["Day 2"])
+print(series_C.iloc[3])
+
+series_C.iloc[3] += 200
+print(series_C.iloc[3])
+
+print("Days with more than 1700 calories")
+print(series_C[series_C > 1700])
+
+"""
+For this example, The data that we are creating a series upon is a dictionary. What happens in this case is that the index labels by
+default becomes the keys in the dictionary.
+The loc and iloc functions still work the same as for any other example.
+"""
