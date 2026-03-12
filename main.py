@@ -8,8 +8,8 @@ Series: A pandas 1-dimensional labeled array that can store any data type.
         You can think of it as a single column in a spreadsheet.
 """
 
-data = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
-series_A = pandas.Series(data)
+data_A = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+series_A = pandas.Series(data_A)
 # print(series_A)
 
 """
@@ -37,7 +37,7 @@ dtype: bool
 NOTE: Series() is not a method. It is a constructor
 """
 
-series_B = pandas.Series(data, index=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"])
+series_B = pandas.Series(data_A, index=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"])
 # print(series_B)
 
 """
