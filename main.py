@@ -73,3 +73,8 @@ series_B.loc["b"] = 23
 Just like in a list, we can also edit values in the series by modifying the values at the specified location.
 """
 
+# print(series_A[series_A >= 103])
+
+"""
+We can use the above technique to filter the series by values
+"""
