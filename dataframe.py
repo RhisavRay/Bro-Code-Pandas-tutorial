@@ -18,3 +18,8 @@ print(dataframe_B)
 
 print(dataframe_B.loc["Employee 1"])
 print(dataframe_B.iloc[2])
+
+"""
+Basic printing, indexing and use of loc and iloc functions remain the same for a series and a dataframe.
+Similar to a series, while initializing one the keyword DataFrame is not a method. It is a constructor
+"""
