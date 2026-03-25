@@ -53,3 +53,21 @@ new_rows_df = pandas.DataFrame(new_rows, index=["Employee 5", "Employee 6"])
 
 dataframe_B = pandas.concat([dataframe_B, new_rows_df])
 print(dataframe_B)
+
+"""
+Now we want to add a new row/entry to the dataframe. To do that we are creating a new dataframe with the new entry/entries, and
+concatenating it to the existing dataframe.
+
+Notice that I have tried to add these 2 new entries in 3 ways.
+1. By passing a list of dictionaries, with each dictionary containing the details of one entry.
+2. By passing a single dictionary with the details of both the entries at the same time, like was done when creating the dataframe.
+3. Creating a dictionary separately, with the details of both the entries, and then converting it to dataframe
+
+Out of these the 3rd one works for obvious reasons. This is how we have created a dataframe before, and it has to work now too
+
+But by that logic the 2nd one should work too. But it turns out it doesn't. It won't throw an error, but you will see that for each new index
+the entry added will contain the list of the details. In this case, it takes each dictionary as a single entry. That's why there are []
+around the dictionary. It accepts a list of dictionaries.
+
+And by that logic, does the 1st technique also works.
+"""
