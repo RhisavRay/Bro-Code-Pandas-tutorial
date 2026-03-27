@@ -55,6 +55,11 @@ try:
 except KeyError:
     print(f"{model_name} not found")
 
+"""
+Now lets learn about selection by rows.
+
+Like we know, to fetch details of a particular entry in a dataframe we use the ".loc" keyword. Similarly here too (line 37) we use the .loc
+keyword to fetch the details of "Duke 390" from the dataframe.
 
 Like we did for selection by column, here too we can pass a list of values (line 39) and expect to get the details of those entries shown.
 
