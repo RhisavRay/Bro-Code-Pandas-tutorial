@@ -31,6 +31,30 @@ But if you wanna use the column names, then we have to switch to .loc. So if nam
 and row names, and thus .loc has to be used. And the same for numbers as well, and .iloc has to be used.
 """
 
+# Selection by rows
+df_2 = pd.read_csv("data.csv", index_col = "model")
+
+print(df_2.loc["Duke 390"])
+
+print(df_2.loc[["Duke 390", "Duke 200"]])
+
+print(df_2[45:54])
+
+print(df_2.iloc[45:54])
+
+print(df_2.loc["Duke 200":"RC 390"])
+
+print(df_2.loc["Duke 200":"RC 390", "make":"model"])
+
+print(df_2.loc["Duke 200":"RC 390":2, ["engine_cc", "horsepower", "torque_nm"]])
+
+model_name = input("Please enter the name of the model: ")
+
+try:
+    print(df_2.loc[model_name])
+except KeyError:
+    print(f"{model_name} not found")
+
 
 Like we did for selection by column, here too we can pass a list of values (line 39) and expect to get the details of those entries shown.
 
