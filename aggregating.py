@@ -9,6 +9,23 @@ Aggregate function in pandas
 3. Often used along side the groupby() function.
 """
 
+pd.set_option('display.float_format', '{:.2f}'.format)
+
+"""
+Before we proceed any further, we need to discuss why this line of code is written.
+
+Without this, the output was coming in scientific notation, and not a simple float. This line is added to fix that issue. Lets break it down
+
+pd.set_option(...)
+This is a pandas utility function that lets you configure global display and behaviour settings for pandas in your current session. Think
+of it like a settings menu — you're not changing your data, you're just telling pandas "from now on, display things this way."
+
+
+'display.float_format'
+This is the name of the specific setting you're changing. Pandas has many options you can set, and display.float_format is the one that
+controls how floating point numbers are rendered when printed. The display. prefix is pandas' way of grouping all display-related settings
+together.
+
 
 '{:.2f}'.format
 This is the most interesting part, so let's slow down here. In Python, '{:.2f}'.format is a format function — specifically, it's the .format
